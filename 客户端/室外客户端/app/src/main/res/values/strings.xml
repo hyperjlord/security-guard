@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">share</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Phone</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="avatarDescription">This is your avatar</string>
+    <string name="nameExample">Joe Biden</string>
+    <string name="Fragment1">Alert</string>
+    <string name="Fragment2">Audio</string>
+    <string name="Fragment3">Notice</string>
+    <string name="backMap">Map</string>
+    <string name="backHome">Home</string>
+    <string name="quit">quit</string>
+    <string name="notice_name">张三</string>
+    <string name="notice_address">翻斗花园2233号</string>
+    <string name="notice_contact">紧急联系：15997845926</string>
+    <string name="notice_description">本人患有轻度认知障碍，balabalabalabalabalabalabalabalabala</string>
+    <string name="notice_help">!!救救我!!</string>
+    <string name="text_audio">音频持续传送中...</string>
+    <string name="btn_audio">取消录制</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dialog_alert">Alert to whom?</string>
+    <string name="dialog_alert_cancel">cancel</string>
+
+
+    <string name="cancel">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="confirm">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="title_activity_test">TestActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_history">historyActivity</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".activity.homePage.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99404348"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="30dp">
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="欢迎使用安全守护-摔倒检测系统"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/micro"
+                android:text="开始识别" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="开启唤醒" />
+            <Button
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="设置留言提醒" />
+            <Button
+                android:id="@+id/button_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="退出登录" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/message" />
+            <Button
+                android:id="@+id/button_4"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/phone" />
+            <Button
+                android:id="@+id/button_5"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:background="@drawable/camera" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

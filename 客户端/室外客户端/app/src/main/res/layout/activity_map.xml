@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:theme="@style/ThemeOverlay.WardSide.FullscreenContainer"
+    tools:context=".ui.map.MapActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/avatarDescription"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="20dp"
+        android:text="导航"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment1"
+        app:layout_constraintVertical_bias="0.03" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:text="安全区域"
+        android:onClick="showBoundary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment1"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="20dp"
+        android:text="历史记录"
+        android:onClick="showHistory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment1"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:textColor="@color/selected_time_text"
+        android:textSize="15sp"
+        android:text=""
+        >
+
+    </TextView>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/fullscreen_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center"-->
+<!--        android:keepScreenOn="true"-->
+<!--        android:text="@string/dummy_content"-->
+<!--        android:textColor="?attr/fullscreenTextColor"-->
+<!--        android:textSize="50sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            style="@style/Widget.Theme.WardSide.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="goToHomePage"
+                android:text="@string/backHome"
+                app:backgroundTint="#3F51B5" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number_array">
+        <item>110</item>
+        <item>119</item>
+        <item>120</item>
+        <item>guardian</item>
+    </string-array>
+
+    <string-array name="date_array">
+        <item>最近2h</item>
+        <item>最近1天</item>
+        <item>输入指定日期查询</item>
+    </string-array>
+</resources>

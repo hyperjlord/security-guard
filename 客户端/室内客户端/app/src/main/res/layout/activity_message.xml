@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    tools:context=".activity.subPage.MessageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="收件人"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息内容"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:ems="10"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bt_send_message"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="发短信" />
+    </LinearLayout>
+
+</RelativeLayout>

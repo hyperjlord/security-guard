@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">室内安全守护</string>
+    <string name="switchRoom">房间号</string>
+<!--    <string name="rtmpUrl">rtmp://stu-project.qingxu.website:20508/live/1</string>-->
+    <string name="btn_url_string">设置url</string>
+    <string name="IflytekAPP_id">6059d613</string>
+
+    <string name="yi">衣</string>
+    <string name="shi">食</string>
+    <string name="zhu">住</string>
+    <string name="xing">行</string>
+    <string name="jian">运动</string>
+    <string name="qita">其它</string>
+    <string name="start_app">选择：</string>
+</resources>

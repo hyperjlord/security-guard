@@ -1,0 +1,16 @@
+package com.yj.dto;
+
+import lombok.Data;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+@Data
+public class AccountInfo{
+    private long id;
+    private String nickname;
+    private int accountType;
+    private String phone;
+    private ArrayList<GuardInfo> wards;
+    private ArrayList<GuardInfo> guardians;
+}
